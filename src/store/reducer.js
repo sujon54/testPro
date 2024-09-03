@@ -22,8 +22,8 @@ export const userSlice = createSlice({
   reducers: {
     userSetup: (state, action) => {
       state.auth = true;
-      state.token = action.token;
-      state.cartTotal = action.cartTotal;
+      // state.token = action.token;
+      state.cartTotal = action.payload;
       // state.userId = action.userId;
       // state.phone = action.phone;
       // state.userName = action.name;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {View, Image, Text, StyleSheet, TouchableOpacity, ToastAndroid} from 'react-native';
+import {View, Image, Text, TouchableOpacity, ToastAndroid} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {Card} from 'react-native-paper';
 import {useNavigation} from '@react-navigation/native';

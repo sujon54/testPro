@@ -20,8 +20,8 @@ const container = () => {
     async function getToken() {
       const token = await AsyncStorage.getItem('TOKEN');
       const cartTotal = await AsyncStorage.getItem('basketItems');
-      if (token || cartTotal) {
-        dispatch(userSetup({token: token, cartTotal: cartTotal}));
+      if (cartTotal) {
+        dispatch(userSetup({cartTotal}));
       }
     }
     getToken();
